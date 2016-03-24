@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AAAAD76F1CA3553100550578 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAD76E1CA3553100550578 /* AppDelegate.swift */; };
+		AAAAD7711CA3553100550578 /* SupermarketController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAD7701CA3553100550578 /* SupermarketController.swift */; };
+		AAAAD7741CA3553100550578 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAAAD7721CA3553100550578 /* Main.storyboard */; };
+		AAAAD7761CA3553100550578 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAAAD7751CA3553100550578 /* Assets.xcassets */; };
+		AAAAD7791CA3553100550578 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAAAD7771CA3553100550578 /* LaunchScreen.storyboard */; };
+		AAAAD7841CA3553100550578 /* Settler_KitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAD7831CA3553100550578 /* Settler_KitTests.swift */; };
+		AAAAD78F1CA3553100550578 /* Settler_KitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAD78E1CA3553100550578 /* Settler_KitUITests.swift */; };
+		AAAAD79E1CA363F400550578 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAD79D1CA363F400550578 /* UIViewControllerExt.swift */; };
+		AAAAD7A01CA3694300550578 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAD79F1CA3694300550578 /* StringExt.swift */; };
+		AAAAD7A21CA36EB900550578 /* NSDecimalNumberExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAD7A11CA36EB900550578 /* NSDecimalNumberExt.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAAAD7801CA3553100550578 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAAAD7631CA3553000550578 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAAAD76A1CA3553000550578;
+			remoteInfo = "Settler Kit";
+		};
+		AAAAD78B1CA3553100550578 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAAAD7631CA3553000550578 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAAAD76A1CA3553000550578;
+			remoteInfo = "Settler Kit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AAAAD76B1CA3553000550578 /* Settler Kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Settler Kit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAAAD76E1CA3553100550578 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AAAAD7701CA3553100550578 /* SupermarketController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupermarketController.swift; sourceTree = "<group>"; };
+		AAAAD7731CA3553100550578 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AAAAD7751CA3553100550578 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAAAD7781CA3553100550578 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AAAAD77A1CA3553100550578 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAAAD77F1CA3553100550578 /* Settler KitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Settler KitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAAAD7831CA3553100550578 /* Settler_KitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settler_KitTests.swift; sourceTree = "<group>"; };
+		AAAAD7851CA3553100550578 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAAAD78A1CA3553100550578 /* Settler KitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Settler KitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAAAD78E1CA3553100550578 /* Settler_KitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settler_KitUITests.swift; sourceTree = "<group>"; };
+		AAAAD7901CA3553100550578 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAAAD79D1CA363F400550578 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		AAAAD79F1CA3694300550578 /* StringExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		AAAAD7A11CA36EB900550578 /* NSDecimalNumberExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDecimalNumberExt.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAAAD7681CA3553000550578 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAAAD77C1CA3553100550578 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAAAD7871CA3553100550578 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAAAD7621CA3553000550578 = {
+			isa = PBXGroup;
+			children = (
+				AAAAD76D1CA3553100550578 /* Settler Kit */,
+				AAAAD7821CA3553100550578 /* Settler KitTests */,
+				AAAAD78D1CA3553100550578 /* Settler KitUITests */,
+				AAAAD76C1CA3553100550578 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAAAD76C1CA3553100550578 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAAAD76B1CA3553000550578 /* Settler Kit.app */,
+				AAAAD77F1CA3553100550578 /* Settler KitTests.xctest */,
+				AAAAD78A1CA3553100550578 /* Settler KitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAAAD76D1CA3553100550578 /* Settler Kit */ = {
+			isa = PBXGroup;
+			children = (
+				AAAAD79C1CA363E000550578 /* Extensions */,
+				AAAAD76E1CA3553100550578 /* AppDelegate.swift */,
+				AAAAD7701CA3553100550578 /* SupermarketController.swift */,
+				AAAAD7721CA3553100550578 /* Main.storyboard */,
+				AAAAD7751CA3553100550578 /* Assets.xcassets */,
+				AAAAD7771CA3553100550578 /* LaunchScreen.storyboard */,
+				AAAAD77A1CA3553100550578 /* Info.plist */,
+			);
+			path = "Settler Kit";
+			sourceTree = "<group>";
+		};
+		AAAAD7821CA3553100550578 /* Settler KitTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAAAD7831CA3553100550578 /* Settler_KitTests.swift */,
+				AAAAD7851CA3553100550578 /* Info.plist */,
+			);
+			path = "Settler KitTests";
+			sourceTree = "<group>";
+		};
+		AAAAD78D1CA3553100550578 /* Settler KitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AAAAD78E1CA3553100550578 /* Settler_KitUITests.swift */,
+				AAAAD7901CA3553100550578 /* Info.plist */,
+			);
+			path = "Settler KitUITests";
+			sourceTree = "<group>";
+		};
+		AAAAD79C1CA363E000550578 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AAAAD79D1CA363F400550578 /* UIViewControllerExt.swift */,
+				AAAAD79F1CA3694300550578 /* StringExt.swift */,
+				AAAAD7A11CA36EB900550578 /* NSDecimalNumberExt.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAAAD76A1CA3553000550578 /* Settler Kit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAAAD7931CA3553100550578 /* Build configuration list for PBXNativeTarget "Settler Kit" */;
+			buildPhases = (
+				AAAAD7671CA3553000550578 /* Sources */,
+				AAAAD7681CA3553000550578 /* Frameworks */,
+				AAAAD7691CA3553000550578 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Settler Kit";
+			productName = "Settler Kit";
+			productReference = AAAAD76B1CA3553000550578 /* Settler Kit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AAAAD77E1CA3553100550578 /* Settler KitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAAAD7961CA3553100550578 /* Build configuration list for PBXNativeTarget "Settler KitTests" */;
+			buildPhases = (
+				AAAAD77B1CA3553100550578 /* Sources */,
+				AAAAD77C1CA3553100550578 /* Frameworks */,
+				AAAAD77D1CA3553100550578 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAAAD7811CA3553100550578 /* PBXTargetDependency */,
+			);
+			name = "Settler KitTests";
+			productName = "Settler KitTests";
+			productReference = AAAAD77F1CA3553100550578 /* Settler KitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AAAAD7891CA3553100550578 /* Settler KitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAAAD7991CA3553100550578 /* Build configuration list for PBXNativeTarget "Settler KitUITests" */;
+			buildPhases = (
+				AAAAD7861CA3553100550578 /* Sources */,
+				AAAAD7871CA3553100550578 /* Frameworks */,
+				AAAAD7881CA3553100550578 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAAAD78C1CA3553100550578 /* PBXTargetDependency */,
+			);
+			name = "Settler KitUITests";
+			productName = "Settler KitUITests";
+			productReference = AAAAD78A1CA3553100550578 /* Settler KitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAAAD7631CA3553000550578 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Natan Hoppe";
+				TargetAttributes = {
+					AAAAD76A1CA3553000550578 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					AAAAD77E1CA3553100550578 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = AAAAD76A1CA3553000550578;
+					};
+					AAAAD7891CA3553100550578 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = AAAAD76A1CA3553000550578;
+					};
+				};
+			};
+			buildConfigurationList = AAAAD7661CA3553000550578 /* Build configuration list for PBXProject "Settler Kit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAAAD7621CA3553000550578;
+			productRefGroup = AAAAD76C1CA3553100550578 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAAAD76A1CA3553000550578 /* Settler Kit */,
+				AAAAD77E1CA3553100550578 /* Settler KitTests */,
+				AAAAD7891CA3553100550578 /* Settler KitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAAAD7691CA3553000550578 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAAAD7791CA3553100550578 /* LaunchScreen.storyboard in Resources */,
+				AAAAD7761CA3553100550578 /* Assets.xcassets in Resources */,
+				AAAAD7741CA3553100550578 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAAAD77D1CA3553100550578 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAAAD7881CA3553100550578 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAAAD7671CA3553000550578 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAAAD7A21CA36EB900550578 /* NSDecimalNumberExt.swift in Sources */,
+				AAAAD7711CA3553100550578 /* SupermarketController.swift in Sources */,
+				AAAAD76F1CA3553100550578 /* AppDelegate.swift in Sources */,
+				AAAAD7A01CA3694300550578 /* StringExt.swift in Sources */,
+				AAAAD79E1CA363F400550578 /* UIViewControllerExt.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAAAD77B1CA3553100550578 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAAAD7841CA3553100550578 /* Settler_KitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAAAD7861CA3553100550578 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAAAD78F1CA3553100550578 /* Settler_KitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAAAD7811CA3553100550578 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAAAD76A1CA3553000550578 /* Settler Kit */;
+			targetProxy = AAAAD7801CA3553100550578 /* PBXContainerItemProxy */;
+		};
+		AAAAD78C1CA3553100550578 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAAAD76A1CA3553000550578 /* Settler Kit */;
+			targetProxy = AAAAD78B1CA3553100550578 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AAAAD7721CA3553100550578 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAAAD7731CA3553100550578 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AAAAD7771CA3553100550578 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAAAD7781CA3553100550578 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAAAD7911CA3553100550578 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AAAAD7921CA3553100550578 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAAAD7941CA3553100550578 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Settler Kit/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hoppe.online.Settler-Kit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AAAAD7951CA3553100550578 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Settler Kit/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hoppe.online.Settler-Kit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AAAAD7971CA3553100550578 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Settler KitTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hoppe.online.Settler-KitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Settler Kit.app/Settler Kit";
+			};
+			name = Debug;
+		};
+		AAAAD7981CA3553100550578 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Settler KitTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hoppe.online.Settler-KitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Settler Kit.app/Settler Kit";
+			};
+			name = Release;
+		};
+		AAAAD79A1CA3553100550578 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Settler KitUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hoppe.online.Settler-KitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Settler Kit";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		AAAAD79B1CA3553100550578 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Settler KitUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hoppe.online.Settler-KitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Settler Kit";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAAAD7661CA3553000550578 /* Build configuration list for PBXProject "Settler Kit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAAAD7911CA3553100550578 /* Debug */,
+				AAAAD7921CA3553100550578 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAAAD7931CA3553100550578 /* Build configuration list for PBXNativeTarget "Settler Kit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAAAD7941CA3553100550578 /* Debug */,
+				AAAAD7951CA3553100550578 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AAAAD7961CA3553100550578 /* Build configuration list for PBXNativeTarget "Settler KitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAAAD7971CA3553100550578 /* Debug */,
+				AAAAD7981CA3553100550578 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AAAAD7991CA3553100550578 /* Build configuration list for PBXNativeTarget "Settler KitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAAAD79A1CA3553100550578 /* Debug */,
+				AAAAD79B1CA3553100550578 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAAAD7631CA3553000550578 /* Project object */;
+}
