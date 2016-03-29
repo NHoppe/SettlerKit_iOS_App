@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SupermarketController.swift
 //  Settler Kit
 //
 //  Created by N Hoppe on 2016-03-23.
@@ -61,7 +61,6 @@ class SupermarketController: UIViewController, UITextFieldDelegate  {
     }
     
     // MARK: Actions
-    
     
     @IBAction func weightSelection(sender: UISegmentedControl) {
         if(sender == weightInputSegment) {

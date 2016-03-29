@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		18EA2895725B19E1F50DE7D1 /* Pods_Settler_Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056435EA4B13A3B76B49DB1C /* Pods_Settler_Kit.framework */; };
+		AA0D66FC1CAA039B0032FB51 /* CurrencyPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0D66FB1CAA039B0032FB51 /* CurrencyPickerDelegate.swift */; };
+		AA0D66FE1CAA14850032FB51 /* CurrencyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0D66FD1CAA14850032FB51 /* CurrencyController.swift */; };
 		AAAAD76F1CA3553100550578 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAD76E1CA3553100550578 /* AppDelegate.swift */; };
 		AAAAD7711CA3553100550578 /* SupermarketController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAD7701CA3553100550578 /* SupermarketController.swift */; };
 		AAAAD7741CA3553100550578 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAAAD7721CA3553100550578 /* Main.storyboard */; };
@@ -41,6 +43,8 @@
 /* Begin PBXFileReference section */
 		056435EA4B13A3B76B49DB1C /* Pods_Settler_Kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Settler_Kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B2100F796147564F712858F /* Pods-Settler Kit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Settler Kit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Settler Kit/Pods-Settler Kit.release.xcconfig"; sourceTree = "<group>"; };
+		AA0D66FB1CAA039B0032FB51 /* CurrencyPickerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyPickerDelegate.swift; sourceTree = "<group>"; };
+		AA0D66FD1CAA14850032FB51 /* CurrencyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyController.swift; sourceTree = "<group>"; };
 		AAAAD76B1CA3553000550578 /* Settler Kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Settler Kit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAAAD76E1CA3553100550578 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAAAD7701CA3553100550578 /* SupermarketController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupermarketController.swift; sourceTree = "<group>"; };
@@ -104,6 +108,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AA0D66F61CA9FDBC0032FB51 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				AA0D66FB1CAA039B0032FB51 /* CurrencyPickerDelegate.swift */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
 		AAAAD7621CA3553000550578 = {
 			isa = PBXGroup;
 			children = (
@@ -129,9 +141,11 @@
 		AAAAD76D1CA3553100550578 /* Settler Kit */ = {
 			isa = PBXGroup;
 			children = (
-				AAAAD7A61CA384DA00550578 /* WebServices */,
+				AA0D66F61CA9FDBC0032FB51 /* Delegates */,
 				AAAAD79C1CA363E000550578 /* Extensions */,
+				AAAAD7A61CA384DA00550578 /* WebServices */,
 				AAAAD76E1CA3553100550578 /* AppDelegate.swift */,
+				AA0D66FD1CAA14850032FB51 /* CurrencyController.swift */,
 				AAAAD7701CA3553100550578 /* SupermarketController.swift */,
 				AAAAD7721CA3553100550578 /* Main.storyboard */,
 				AAAAD7751CA3553100550578 /* Assets.xcassets */,
@@ -361,6 +375,8 @@
 			files = (
 				AAAAD7A21CA36EB900550578 /* NSDecimalNumberExt.swift in Sources */,
 				AAAAD7711CA3553100550578 /* SupermarketController.swift in Sources */,
+				AA0D66FE1CAA14850032FB51 /* CurrencyController.swift in Sources */,
+				AA0D66FC1CAA039B0032FB51 /* CurrencyPickerDelegate.swift in Sources */,
 				AAAAD76F1CA3553100550578 /* AppDelegate.swift in Sources */,
 				AAAAD7A81CA384ED00550578 /* CurrencyWebService.swift in Sources */,
 				AAAAD7A01CA3694300550578 /* StringExt.swift in Sources */,

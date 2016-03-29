@@ -10,8 +10,12 @@ import Foundation
 
 extension NSDecimalNumber {
     func toCurrencyString() -> String {
+        return toCurrencyString("$")
+    }
+    
+    func toCurrencyString(moneySymbol: String) -> String{
         let formatter = NSNumberFormatter()
-        formatter.positiveFormat = "$ 0.00"
+        formatter.positiveFormat = moneySymbol + " 0.00"
         formatter.numberStyle = NSNumberFormatterStyle.CurrencyStyle
         formatter.locale = NSLocale(localeIdentifier: "en_CA")
         
