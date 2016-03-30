@@ -28,6 +28,5 @@ class CurrencyPickerDelegate: NSObject, UIPickerViewDataSource, UIPickerViewDele
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
     {
-        print(currencyList[row])
     }
 }
