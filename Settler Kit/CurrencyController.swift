@@ -50,11 +50,7 @@ class CurrencyController: UIViewController {
             
             let currencyService = CurrencyWebService()
             
-            let rate = currencyService.getRateForCurrency(from, toCurrency: to)
-            
-            let currencies = currencyService.getCurrencies()
-            
-            exchangeValue.text = rate.toCurrencyString(currencies[to] as! String)
+            currencyService.getRateFor(from, toCurrency: to, uiOutput: exchangeValue)
         }
     }
     

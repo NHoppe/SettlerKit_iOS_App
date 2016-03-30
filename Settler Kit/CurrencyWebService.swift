@@ -11,6 +11,8 @@ import Alamofire
 
 class CurrencyWebService {
     
+    let requestWait:UInt32 = 200 * 1000; // 200 milliseconds
+    
     let availableCurrencies = [
         "Australian dollar":		"AUD",
         "Bulgarian lev":			"BGN",
@@ -52,31 +54,43 @@ class CurrencyWebService {
     
     var exchangeRate:NSDecimalNumber = 0
     
-    func getRateFor(baseCurrency: String, toCurrency: String){
+    private func getRateForCurrency(baseCurrency: String, toCurrency: String,
+                                    callback: ((requestResponse: Response<AnyObject, NSError>)->Void)?){
         let url = baseUrl + baseCurrency + argUrl + toCurrency
-        
+                           
         Alamofire.request(.GET, url).responseJSON { response in
-                if response.result.isSuccess {
-                    let reqValue = response.result.value as! NSDictionary
-                    let rateNum = reqValue["rates"]![toCurrency] as! Double
-                    self.exchangeRate = NSDecimalNumber(double: rateNum)
-                }
+            if (response.result.isSuccess) {
+                callback?(requestResponse: response)
+            }
         }
     }
     
     func getAvailableCurrencies() -> Array<String> {
         return Array(availableCurrencies.keys).sort()
     }
-    
-    func getCurrencies() -> NSDictionary {
-        return availableCurrencies
-    }
-    
-    func getRateForCurrency(baseCurrency: String, toCurrency: String) -> NSDecimalNumber {
+        
+    func getRateFor(baseCurrency: String, toCurrency: String, uiOutput: UILabel) {
         let base = availableCurrencies[baseCurrency]!
         let to = availableCurrencies[toCurrency]!
         
-        getRateFor(base, toCurrency: to)
-        return exchangeRate
+        self.exchangeRate = 0
+        
+        if(base == to) {
+            self.exchangeRate = 1
+            uiOutput.text = self.exchangeRate.toCurrencyString(to)
+        
+        } else {
+        
+            getRateForCurrency(base, toCurrency: to) { (requestResponse) -> Void in
+                if requestResponse.result.isSuccess {
+                        let reqValue = requestResponse.result.value as! NSDictionary
+                        let rateNum = reqValue["rates"]![to] as! Double
+                        self.exchangeRate = NSDecimalNumber(double: rateNum)
+                    
+                        uiOutput.text = self.exchangeRate.toCurrencyString(to)
+                }
+            }
+            
+        }
     }
 }
