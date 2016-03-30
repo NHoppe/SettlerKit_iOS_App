@@ -83,11 +83,11 @@ class CurrencyWebService {
         
             getRateForCurrency(base, toCurrency: to) { (requestResponse) -> Void in
                 if requestResponse.result.isSuccess {
-                        let reqValue = requestResponse.result.value as! NSDictionary
-                        let rateNum = reqValue["rates"]![to] as! Double
-                        self.exchangeRate = NSDecimalNumber(double: rateNum)
+                    let reqValue = requestResponse.result.value as! NSDictionary
+                    let rateNum = reqValue["rates"]![to] as! Double
+                    self.exchangeRate = NSDecimalNumber(double: rateNum)
                     
-                        uiOutput.text = self.exchangeRate.toCurrencyString(to)
+                    uiOutput.text = self.exchangeRate.toCurrencyString(to)
                 }
             }
             
