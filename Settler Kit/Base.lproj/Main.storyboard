@@ -36,6 +36,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="SupermarketBackground" translatesAutoresizingMaskIntoConstraints="NO" id="AsV-uQ-v7h">
+                                <rect key="frame" x="0.0" y="64" width="753" height="1126"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I3w-jW-BEu">
+                                <rect key="frame" x="10" y="77" width="291" height="240"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                            </view>
                             <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wya-hc-Iof">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <items>
@@ -179,6 +186,7 @@
     </scenes>
     <resources>
         <image name="CurrencyIcon" width="32" height="32"/>
+        <image name="SupermarketBackground" width="753" height="1126"/>
         <image name="SupermarketIcon" width="32" height="32"/>
     </resources>
 </document>
