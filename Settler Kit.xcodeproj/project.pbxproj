@@ -10,6 +10,7 @@
 		18EA2895725B19E1F50DE7D1 /* Pods_Settler_Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056435EA4B13A3B76B49DB1C /* Pods_Settler_Kit.framework */; };
 		AA0D66FC1CAA039B0032FB51 /* CurrencyPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0D66FB1CAA039B0032FB51 /* CurrencyPickerDelegate.swift */; };
 		AA0D66FE1CAA14850032FB51 /* CurrencyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0D66FD1CAA14850032FB51 /* CurrencyController.swift */; };
+		AA0D67021CAC99EB0032FB51 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0D67011CAC99EB0032FB51 /* MainTabBarController.swift */; };
 		AAAAD76F1CA3553100550578 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAD76E1CA3553100550578 /* AppDelegate.swift */; };
 		AAAAD7711CA3553100550578 /* SupermarketController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAD7701CA3553100550578 /* SupermarketController.swift */; };
 		AAAAD7741CA3553100550578 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAAAD7721CA3553100550578 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		9B2100F796147564F712858F /* Pods-Settler Kit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Settler Kit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Settler Kit/Pods-Settler Kit.release.xcconfig"; sourceTree = "<group>"; };
 		AA0D66FB1CAA039B0032FB51 /* CurrencyPickerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyPickerDelegate.swift; sourceTree = "<group>"; };
 		AA0D66FD1CAA14850032FB51 /* CurrencyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyController.swift; sourceTree = "<group>"; };
+		AA0D67011CAC99EB0032FB51 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		AAAAD76B1CA3553000550578 /* Settler Kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Settler Kit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAAAD76E1CA3553100550578 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAAAD7701CA3553100550578 /* SupermarketController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupermarketController.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				AAAAD7751CA3553100550578 /* Assets.xcassets */,
 				AAAAD7771CA3553100550578 /* LaunchScreen.storyboard */,
 				AAAAD77A1CA3553100550578 /* Info.plist */,
+				AA0D67011CAC99EB0032FB51 /* MainTabBarController.swift */,
 			);
 			path = "Settler Kit";
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 			files = (
 				AAAAD7A21CA36EB900550578 /* NSDecimalNumberExt.swift in Sources */,
 				AAAAD7711CA3553100550578 /* SupermarketController.swift in Sources */,
+				AA0D67021CAC99EB0032FB51 /* MainTabBarController.swift in Sources */,
 				AA0D66FE1CAA14850032FB51 /* CurrencyController.swift in Sources */,
 				AA0D66FC1CAA039B0032FB51 /* CurrencyPickerDelegate.swift in Sources */,
 				AAAAD76F1CA3553100550578 /* AppDelegate.swift in Sources */,
@@ -524,7 +528,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Settler Kit/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hoppe.online.Settler-Kit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -537,7 +541,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Settler Kit/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hoppe.online.Settler-Kit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
