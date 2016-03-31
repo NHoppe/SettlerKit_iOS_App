@@ -35,10 +35,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="scaleAspectFill" misplaced="YES" image="SupermarketBackground" translatesAutoresizingMaskIntoConstraints="NO" id="AsV-uQ-v7h">
-                                <rect key="frame" x="0.0" y="64" width="753" height="1126"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="SupermarketBackground" translatesAutoresizingMaskIntoConstraints="NO" id="aJN-q4-lx2">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wya-hc-Iof">
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wya-hc-Iof">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <items>
                                     <navigationItem title="Supermarket Tool" id="xA4-o1-c5w"/>
@@ -141,14 +141,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="AsV-uQ-v7h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="V5K-zb-Jwk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aJN-q4-lx2" secondAttribute="bottom" id="3O4-yc-bcP"/>
+                            <constraint firstItem="aJN-q4-lx2" firstAttribute="top" secondItem="wya-hc-Iof" secondAttribute="bottom" id="4a4-ux-XCq"/>
+                            <constraint firstAttribute="trailing" secondItem="aJN-q4-lx2" secondAttribute="trailing" id="Yc3-ZG-gwU"/>
                             <constraint firstItem="wya-hc-Iof" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="aqc-Oo-ziG"/>
                             <constraint firstItem="wya-hc-Iof" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="cEo-gw-DdW"/>
-                            <constraint firstItem="AsV-uQ-v7h" firstAttribute="top" secondItem="wya-hc-Iof" secondAttribute="bottom" id="hll-6p-6mw"/>
                             <constraint firstItem="WZA-xR-IMa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hoW-jX-KhY"/>
+                            <constraint firstItem="aJN-q4-lx2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lTu-uR-OAi"/>
                             <constraint firstItem="WZA-xR-IMa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pWH-HZ-6lQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wya-hc-Iof" secondAttribute="trailing" constant="-20" id="tyW-tA-man"/>
-                            <constraint firstAttribute="trailing" secondItem="AsV-uQ-v7h" secondAttribute="trailing" id="zZ9-Ca-EQI"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Supermarket Tool" image="SupermarketIcon" selectedImage="SupermarketIcon" id="dKw-n7-qqf"/>
@@ -176,15 +177,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FoD-5b-ddY">
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="CurrencyBackground" translatesAutoresizingMaskIntoConstraints="NO" id="CTa-dX-sBK">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FoD-5b-ddY">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <items>
                                     <navigationItem title="Currency Tool" id="HSF-KO-Tfw"/>
                                 </items>
                             </navigationBar>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="scaleAspectFill" misplaced="YES" image="CurrencyBackground" translatesAutoresizingMaskIntoConstraints="NO" id="3zC-Dl-7Am">
-                                <rect key="frame" x="0.0" y="64" width="976" height="1022"/>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Gfc-rd-G7m">
                                 <rect key="frame" x="165" y="137" width="270" height="326"/>
                                 <subviews>
@@ -288,13 +289,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="FoD-5b-ddY" firstAttribute="top" secondItem="Nkb-oA-ZL4" secondAttribute="bottom" id="2su-x7-gYf"/>
-                            <constraint firstItem="3zC-Dl-7Am" firstAttribute="top" secondItem="FoD-5b-ddY" secondAttribute="bottom" id="3CN-Hr-2BU"/>
                             <constraint firstItem="Gfc-rd-G7m" firstAttribute="centerY" secondItem="iCv-c1-f7T" secondAttribute="centerY" id="4fv-nF-7CS"/>
+                            <constraint firstItem="Rep-ly-fNB" firstAttribute="top" secondItem="CTa-dX-sBK" secondAttribute="bottom" id="Hzm-dP-ycH"/>
+                            <constraint firstAttribute="trailing" secondItem="CTa-dX-sBK" secondAttribute="trailing" id="PYk-uG-rXc"/>
                             <constraint firstItem="Gfc-rd-G7m" firstAttribute="centerX" secondItem="iCv-c1-f7T" secondAttribute="centerX" id="YpC-X5-Q0V"/>
+                            <constraint firstItem="CTa-dX-sBK" firstAttribute="leading" secondItem="iCv-c1-f7T" secondAttribute="leading" id="e4u-fX-Bbl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="FoD-5b-ddY" secondAttribute="trailing" constant="-20" id="fJa-f7-Tge"/>
-                            <constraint firstItem="3zC-Dl-7Am" firstAttribute="leading" secondItem="iCv-c1-f7T" secondAttribute="leading" id="raM-32-FGW"/>
+                            <constraint firstItem="CTa-dX-sBK" firstAttribute="top" secondItem="FoD-5b-ddY" secondAttribute="bottom" id="p5S-xm-DDd"/>
                             <constraint firstItem="FoD-5b-ddY" firstAttribute="leading" secondItem="iCv-c1-f7T" secondAttribute="leadingMargin" constant="-20" id="usL-8b-J3P"/>
-                            <constraint firstAttribute="trailing" secondItem="3zC-Dl-7Am" secondAttribute="trailing" id="zhS-Ud-ffa"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Currency Tool" image="CurrencyIcon" selectedImage="CurrencyIcon" id="twN-f1-JtX"/>
@@ -311,9 +313,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="CurrencyBackground" width="976" height="1022"/>
+        <image name="CurrencyBackground" width="5472" height="3648"/>
         <image name="CurrencyIcon" width="32" height="32"/>
-        <image name="SupermarketBackground" width="753" height="1126"/>
+        <image name="SupermarketBackground" width="5472" height="3648"/>
         <image name="SupermarketIcon" width="32" height="32"/>
     </resources>
 </document>
