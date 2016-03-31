@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Yqg-7w-iG1">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -36,7 +35,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="center" fixedFrame="YES" image="SupermarketBackground" translatesAutoresizingMaskIntoConstraints="NO" id="AsV-uQ-v7h">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="scaleAspectFill" misplaced="YES" image="SupermarketBackground" translatesAutoresizingMaskIntoConstraints="NO" id="AsV-uQ-v7h">
                                 <rect key="frame" x="0.0" y="64" width="753" height="1126"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wya-hc-Iof">
@@ -142,11 +141,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="AsV-uQ-v7h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="V5K-zb-Jwk"/>
                             <constraint firstItem="wya-hc-Iof" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="aqc-Oo-ziG"/>
                             <constraint firstItem="wya-hc-Iof" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="cEo-gw-DdW"/>
+                            <constraint firstItem="AsV-uQ-v7h" firstAttribute="top" secondItem="wya-hc-Iof" secondAttribute="bottom" id="hll-6p-6mw"/>
                             <constraint firstItem="WZA-xR-IMa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hoW-jX-KhY"/>
                             <constraint firstItem="WZA-xR-IMa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pWH-HZ-6lQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wya-hc-Iof" secondAttribute="trailing" constant="-20" id="tyW-tA-man"/>
+                            <constraint firstAttribute="trailing" secondItem="AsV-uQ-v7h" secondAttribute="trailing" id="zZ9-Ca-EQI"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Supermarket Tool" image="SupermarketIcon" selectedImage="SupermarketIcon" id="dKw-n7-qqf"/>
@@ -180,7 +182,7 @@
                                     <navigationItem title="Currency Tool" id="HSF-KO-Tfw"/>
                                 </items>
                             </navigationBar>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="center" fixedFrame="YES" image="CurrencyBackground" translatesAutoresizingMaskIntoConstraints="NO" id="3zC-Dl-7Am">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="scaleAspectFill" misplaced="YES" image="CurrencyBackground" translatesAutoresizingMaskIntoConstraints="NO" id="3zC-Dl-7Am">
                                 <rect key="frame" x="0.0" y="64" width="976" height="1022"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Gfc-rd-G7m">
@@ -286,10 +288,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="FoD-5b-ddY" firstAttribute="top" secondItem="Nkb-oA-ZL4" secondAttribute="bottom" id="2su-x7-gYf"/>
+                            <constraint firstItem="3zC-Dl-7Am" firstAttribute="top" secondItem="FoD-5b-ddY" secondAttribute="bottom" id="3CN-Hr-2BU"/>
                             <constraint firstItem="Gfc-rd-G7m" firstAttribute="centerY" secondItem="iCv-c1-f7T" secondAttribute="centerY" id="4fv-nF-7CS"/>
                             <constraint firstItem="Gfc-rd-G7m" firstAttribute="centerX" secondItem="iCv-c1-f7T" secondAttribute="centerX" id="YpC-X5-Q0V"/>
                             <constraint firstAttribute="trailingMargin" secondItem="FoD-5b-ddY" secondAttribute="trailing" constant="-20" id="fJa-f7-Tge"/>
+                            <constraint firstItem="3zC-Dl-7Am" firstAttribute="leading" secondItem="iCv-c1-f7T" secondAttribute="leading" id="raM-32-FGW"/>
                             <constraint firstItem="FoD-5b-ddY" firstAttribute="leading" secondItem="iCv-c1-f7T" secondAttribute="leadingMargin" constant="-20" id="usL-8b-J3P"/>
+                            <constraint firstAttribute="trailing" secondItem="3zC-Dl-7Am" secondAttribute="trailing" id="zhS-Ud-ffa"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Currency Tool" image="CurrencyIcon" selectedImage="CurrencyIcon" id="twN-f1-JtX"/>
