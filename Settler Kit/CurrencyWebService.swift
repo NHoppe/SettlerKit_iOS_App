@@ -10,9 +10,7 @@ import Foundation
 import Alamofire
 
 class CurrencyWebService {
-    
-    let requestWait:UInt32 = 200 * 1000; // 200 milliseconds
-    
+
     let availableCurrencies = [
         "Australian dollar":		"AUD",
         "Bulgarian lev":			"BGN",
@@ -52,8 +50,6 @@ class CurrencyWebService {
     let baseUrl = "http://api.fixer.io/latest?base="
     let argUrl = "&symbols="
     
-    var exchangeRate:NSDecimalNumber = 0
-    
     private func getRateForCurrency(baseCurrency: String, toCurrency: String,
                                     callback: ((requestResponse: Response<AnyObject, NSError>)->Void)?){
         let url = baseUrl + baseCurrency + argUrl + toCurrency
@@ -69,25 +65,26 @@ class CurrencyWebService {
         return Array(availableCurrencies.keys).sort()
     }
         
-    func getRateFor(baseCurrency: String, toCurrency: String, uiOutput: UILabel) {
+    func getRateFor(baseCurrency: String, toCurrency: String, amount: NSDecimalNumber, rateOutput: UILabel, amountOutput: UILabel) {
         let base = availableCurrencies[baseCurrency]!
         let to = availableCurrencies[toCurrency]!
-        
-        self.exchangeRate = 0
-        
+
         if(base == to) {
-            self.exchangeRate = 1
-            uiOutput.text = self.exchangeRate.toCurrencyString(to)
-        
+            rateOutput.text = "N/A"
+            amountOutput.text = "N/A"
         } else {
         
+            var exchangeRate: NSDecimalNumber = 0
+            
             getRateForCurrency(base, toCurrency: to) { (requestResponse) -> Void in
                 if requestResponse.result.isSuccess {
                     let reqValue = requestResponse.result.value as! NSDictionary
                     let rateNum = reqValue["rates"]![to] as! Double
-                    self.exchangeRate = NSDecimalNumber(double: rateNum)
+                    exchangeRate = NSDecimalNumber(double: rateNum)
+                    let convAmount = amount.decimalNumberByMultiplyingBy(exchangeRate)
                     
-                    uiOutput.text = self.exchangeRate.toCurrencyString(to)
+                    rateOutput.text = exchangeRate.toCurrencyString(to)
+                    amountOutput.text = convAmount.toCurrencyString(to)
                 }
             }
             

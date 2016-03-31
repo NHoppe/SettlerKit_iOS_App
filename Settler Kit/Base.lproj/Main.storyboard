@@ -355,6 +355,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Currency Tool" image="CurrencyIcon" selectedImage="CurrencyIcon" id="twN-f1-JtX"/>
                     <connections>
+                        <outlet property="amountInput" destination="fJU-Pw-AXm" id="SW8-OO-eMJ"/>
+                        <outlet property="convAmountValue" destination="vK3-zG-VVS" id="zSX-QH-b6e"/>
                         <outlet property="currencyFromPicker" destination="nC3-IT-PCL" id="Khu-Kl-UtS"/>
                         <outlet property="currencyToPicker" destination="XR1-Uw-AEk" id="bTI-e3-9G5"/>
                         <outlet property="exchangeValue" destination="euN-T4-Miu" id="0Z9-ZJ-O7j"/>

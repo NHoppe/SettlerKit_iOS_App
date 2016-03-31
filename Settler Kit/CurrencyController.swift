@@ -8,7 +8,9 @@
 
 import UIKit
 
-class CurrencyController: UIViewController {
+class CurrencyController: UIViewController, UITextFieldDelegate {
+    
+    @IBOutlet weak var amountInput: UITextField!
     
     @IBOutlet weak var currencyFromPicker: UIPickerView!
     @IBOutlet weak var currencyToPicker: UIPickerView!
@@ -16,6 +18,8 @@ class CurrencyController: UIViewController {
     @IBOutlet weak var getRateBtn: UIButton!
     
     @IBOutlet weak var exchangeValue: UILabel!
+    
+    @IBOutlet weak var convAmountValue: UILabel!
     
     let currencyFromDelegate = CurrencyPickerDelegate()
     let currencyToDelegate = CurrencyPickerDelegate()
@@ -27,7 +31,13 @@ class CurrencyController: UIViewController {
         
         // Do any additional setup after loading the view.
         
+        self.hideKeyboardWhenTappedAround()
+        
         exchangeValue.text = ""
+        convAmountValue.text = ""
+        
+        amountInput.delegate = self
+        amountInput.keyboardType = UIKeyboardType.DecimalPad
         
         currencyFromPicker.delegate = currencyFromDelegate
         currencyFromPicker.dataSource = currencyFromDelegate
@@ -45,12 +55,21 @@ class CurrencyController: UIViewController {
     
     @IBAction func getRate(sender: UIButton) {
         if(sender == getRateBtn) {
+            
+            if(amountInput.text!.isEmpty) {
+                return
+            }
+            
+            self.view.endEditing(true)
+            
+            let amount = amountInput.text!.toDecimal()
+            
             let from = currencyList[currencyFromPicker.selectedRowInComponent(0)]
             let to = currencyList[currencyToPicker.selectedRowInComponent(0)]
             
             let currencyService = CurrencyWebService()
             
-            currencyService.getRateFor(from, toCurrency: to, uiOutput: exchangeValue)
+            currencyService.getRateFor(from, toCurrency: to, amount: amount, rateOutput: exchangeValue, amountOutput: convAmountValue)
         }
     }
     
